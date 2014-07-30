@@ -1,9 +1,14 @@
 {
     "name": "np/np-gravatar",
+    "autoload": {
+        "psr-4": {
+            "NP\\": "library"
+        }
+    },
     "repositories" : [
         {
             "type": "vcs",
-            "url": "https://github.com/eriksch/np-gravatar",
+            "url": "https://github.com/fronteerstrimm/np-gravatar",
         }
     ]
 }
