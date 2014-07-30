@@ -2,12 +2,13 @@
     "name": "np/np-gravatar",
     "type": "library",
     "minimum-stability": "dev",
+    "target-dir": "library",
     "require": {
         "php": ">=5.0.0"
     },
     "autoload": {
         "psr-0": {
-            "NP\\": "library/NP"
+            "NP_": "NP"
         }
     },
     "repositories" : [
@@ -15,5 +16,8 @@
             "type": "vcs",
             "url": "https://github.com/fronteerstrimm/np-gravatar"
         }
+    ],
+    "include-path": [
+        ""
     ]
 }
