@@ -3,11 +3,11 @@
     "type": "library",
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.0.0",
+        "php": ">=5.0.0"
     },
     "autoload": {
-        "psr-4": {
-            "NP\\": "library"
+        "psr-0": {
+            "NP\\": "library/NP"
         }
     },
     "repositories" : [
