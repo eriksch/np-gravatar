@@ -1,0 +1,9 @@
+{
+    "name": "np/np-gravatar",
+    "repositories" : [
+        {
+            "type": "vcs",
+            "url": "https://github.com/eriksch/np-gravatar",
+        }
+    ]
+}
