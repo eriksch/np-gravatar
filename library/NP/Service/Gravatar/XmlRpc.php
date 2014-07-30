@@ -24,12 +24,11 @@ class NP_Service_Gravatar_XmlRpc
     const X_RATED  = 3;
 
     /**
-     * The API key of the Gravatar account. It can be retrieved on
-     * the page for editing profile, on wordpress.com.
+     * The users gravatars password
      *
      * @var string
      */
-    protected $_apiKey;
+    protected $_password;
 
     /**
      * Email address that corresponds to $_apiKey.
@@ -60,37 +59,37 @@ class NP_Service_Gravatar_XmlRpc
     /**
      * Constructor.
      * 
-     * @param string $apiKey
+     * @param string $password
      * @param string $email
      * @return void
      */
-    public function  __construct($apiKey, $email)
+    public function  __construct($password, $email)
     {
-        $this->setApiKey($apiKey);
+        $this->setPassword($password);
         $this->setEmail($email);
     }
 
     /**
-     * Sets API key.
+     * Sets Password
      *
-     * @param string $apiKey
+     * @param string $password
      * @return NP_Service_Gravatar_XmlRpc
      */
-    public function setApiKey($apiKey)
+    public function setPassword($password)
     {
-        $this->_apiKey = (string)$apiKey;
+        $this->_password = (string)$password;
 
         return $this;
     }
 
     /**
-     * Retrieves API key.
+     * Retrieves Password.
      *
      * @return string
      */
-    public function getApiKey()
+    public function getPassword()
     {
-        return $this->_apiKey;
+        return $this->_password;
     }
 
     /**
@@ -386,7 +385,7 @@ class NP_Service_Gravatar_XmlRpc
      */
     protected function _call($method, $params = array())
     {
-        $params = array_merge($params, array('apikey'=>$this->getApiKey()));
+        $params = array_merge($params, array('password'=>$this->getPassword()));
 
         $xmlRpcClient = $this->getXmlRpcClient();
         $xmlRpcClient->setSkipSystemLookup(true); //We will manually prepare params.
