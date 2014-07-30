@@ -1,5 +1,10 @@
 {
     "name": "np/np-gravatar",
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.0.0",
+    },
     "autoload": {
         "psr-4": {
             "NP\\": "library"
