@@ -2,13 +2,12 @@
     "name": "np/np-gravatar",
     "type": "library",
     "minimum-stability": "dev",
-    "target-dir": "library",
     "require": {
         "php": ">=5.0.0"
     },
     "autoload": {
         "psr-0": {
-            "NP_": "library/NP"
+            "NP_": "library"
         }
     },
     "repositories" : [
