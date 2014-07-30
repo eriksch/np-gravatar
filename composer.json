@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-0": {
-            "NP_": "NP"
+            "NP_": "library/NP"
         }
     },
     "repositories" : [
