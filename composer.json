@@ -1,5 +1,5 @@
 {
-    "name": "np/np-gravatar",
+    "name": "trimm/np-gravatar",
     "type": "library",
     "minimum-stability": "dev",
     "require": {
