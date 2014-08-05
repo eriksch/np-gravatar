@@ -25,7 +25,7 @@ class NP_Service_Gravatar_Utility
      */
     public static function emailHash($email)
     {
-        return md5((string)$email);
+        return md5(strtolower((string)$email));
     }
     
     /**
